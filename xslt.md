@@ -114,7 +114,6 @@
             <body>
                 <h1>Calificaciones de la convocatoria de Junio</h1>
                 <table border="1">
-                    <xsl:for-each select="notas/alumno[@convocatoria='Junio']">
                         <tr>
                             <th colspan="3">Datos</th>
                             <th colspan="3">Notas</th>
@@ -127,6 +126,7 @@
                             <td>Examen</td>
                             <td>Final</td>
                         </tr>
+                    <xsl:for-each select="notas/alumno[@convocatoria='Junio']">
                         <tr>
                             <td>
                                 <xsl:value-of select="nombre"/>
